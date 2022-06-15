@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="login_assignment.Student1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <table style="width: 100%; background-color: Orange; text-align: center; border-style: solid;
+        border-radius: 20px">
+        <tr>
+            <td>
+                Welcome To VNR Web Application
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; background-color: Yellow; text-align: center; border-style: solid;
+        border-radius: 20px">
+        <tr>
+            <td>
+                <a href="StudentHome.aspx">Home</a>
+            </td>
+            <td>
+                <a href="UserDetails.aspx">User Details</a>
+            </td>
+            <td>
+                <a href="validations.aspx">Validations</a>
+            </td>
+            <td>
+                <a href="#">Books From Library</a>
+            </td>
+            <td>
+                <a href="#">Results</a>
+            </td>
+            <td>
+                <a href="login.aspx">Logout</a> 
+            </td>
+        </tr>
+    </table>
+    <div style="border-style: solid; padding: 20px; margin: 20px">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <%--body--%>
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+    </form>
+</body>
+</html>
